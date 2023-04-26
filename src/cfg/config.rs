@@ -1,0 +1,1 @@
+pub const DATABASE_CONNECTION: &str = "postgres://USER:PASSWORD@HOST/DATABASE";

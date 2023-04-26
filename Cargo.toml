@@ -1,0 +1,16 @@
+[package]
+name = "mail"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4"
+sea-orm = { version = "^0", features = [ "sqlx-postgres", "runtime-tokio-native-tls", "macros" ] }
+serde = { version = "1.0.160", features = ["derive"] }
+serde_json = { version = "1.0", default-features = false, features = ["alloc"] }
+actix-web-validator = "5.0.1"
+validator = { version = "0.16", features = ["derive"] }
+regex = "0.2"
+anyhow = "1.0.70"
